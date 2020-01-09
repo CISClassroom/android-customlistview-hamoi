@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = MyAdapter(this,R.layout.row,list)
         list.add(Model("วิธาน   วงษาบุตร","603410061-2",R.drawable.tor,"089-818-2239","withan@kkumail.com","https://github.com/wtt-kku"))
         list.add(Model("ปิยทัศน์ นวกิจวัฒนา","603410208-8",R.drawable.tle,"062-281-2737","piyatat@kkumail.com","https://github.com/piyatat-source"))
+        list.add(Model("เกียรติศักดิ์ วรภาพ" ,"603410289-2" , R.drawable.boss,"093-481-3207","keadtisak_w@kkumail.com","https://github.com/Bosskeadtisak"))
         listView.setOnItemClickListener { parent:AdapterView<*>, view:View, position:Int, id:Long ->
             if (position == 0)
             {
@@ -49,6 +50,21 @@ class MainActivity : AppCompatActivity() {
                 val tele = list[1].tel
                 val email = list[1].email
                 val github = list[1].github
+                val intent = Intent(this@MainActivity, DataActivity::class.java)
+                intent.putExtra("fn",fullname)
+                intent.putExtra("id",idstudent)
+                intent.putExtra("tel",tele)
+                intent.putExtra("email",email)
+                intent.putExtra("git",github)
+                startActivity(intent)
+            }
+            if (position == 2)
+            {
+                val fullname = list[2].fullname
+                val idstudent = list[2].idstudent
+                val tele = list[2].tel
+                val email = list[2].email
+                val github = list[2].github
                 val intent = Intent(this@MainActivity, DataActivity::class.java)
                 intent.putExtra("fn",fullname)
                 intent.putExtra("id",idstudent)
