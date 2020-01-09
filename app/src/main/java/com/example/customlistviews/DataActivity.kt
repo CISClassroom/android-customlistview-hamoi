@@ -45,6 +45,7 @@ class DataActivity : AppCompatActivity() {
             "603410208-8" -> image.setImageResource(R.drawable.tle)
             "603410289-2" -> image.setImageResource(R.drawable.boss)
             "603410059-9" -> image.setImageResource(R.drawable.riwjin)
+            "603410213-5" -> image.setImageResource(R.drawable.kiw)
             else -> image.setImageResource(R.mipmap.ic_launcher)
         }
 
