@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataActivity">
+
+
+    <ImageView
+        android:id="@+id/display_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/display_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:text="[FULLNAME]"
+        android:textColor="#000"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/display_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="315dp"
+        android:text="[ID STUDENT]"
+        android:textColor="#000"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/display_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:text="[MAJOR]"
+        android:textColor="#000"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/display_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="405dp"
+        android:text="[tel number]"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:id="@+id/display_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="445dp"
+        android:text="[email]"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:id="@+id/display_github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:text="[github]"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/tel"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="120dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/email"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="120dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/github"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="120dp"
+        />
+
+
+
+</RelativeLayout>
