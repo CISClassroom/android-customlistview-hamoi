@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         var list = mutableListOf<Model>()
         listView.adapter = MyAdapter(this,R.layout.row,list)
         list.add(Model("วิธาน   วงษาบุตร","603410061-2",R.drawable.tor,"089-818-2239","withan@kkumail.com","https://github.com/wtt-kku"))
-
+        list.add(Model("ปิยทัศน์ นวกิจวัฒนา","603410208-8",R.drawable.tle,"062-281-2737","piyatat@kkumail.com","https://github.com/piyatat-source"))
         listView.setOnItemClickListener { parent:AdapterView<*>, view:View, position:Int, id:Long ->
             if (position == 0)
             {
@@ -42,7 +42,21 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 //Toast.makeText(this@MainActivity,"BOSS",Toast.LENGTH_LONG).show()
             }
-
+            if (position == 1)
+            {
+                val fullname = list[1].fullname
+                val idstudent = list[1].idstudent
+                val tele = list[1].tel
+                val email = list[1].email
+                val github = list[1].github
+                val intent = Intent(this@MainActivity, DataActivity::class.java)
+                intent.putExtra("fn",fullname)
+                intent.putExtra("id",idstudent)
+                intent.putExtra("tel",tele)
+                intent.putExtra("email",email)
+                intent.putExtra("git",github)
+                startActivity(intent)
+            }
         }
 
 

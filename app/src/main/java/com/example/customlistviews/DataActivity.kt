@@ -42,6 +42,7 @@ class DataActivity : AppCompatActivity() {
 
         when (get_idstudent) {
             "603410061-2" -> image.setImageResource(R.drawable.tor)
+            "603410208-8" -> image.setImageResource(R.drawable.tle)
             else -> image.setImageResource(R.mipmap.ic_launcher)
         }
 
